@@ -5,11 +5,11 @@
   "main": "main.js",
   "type": "module",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3000",
     "build": "next build",
     "start": "next start",
     "electron": "electron .",
-    "electron-dev": "concurrently \"npm run dev\" \"wait-on http://localhost:3000 && electron .\"",
+    "electron-dev": "cross-env NODE_ENV=development concurrently \"npm run dev\" \"wait-on http://localhost:3000 && electron .\"",
     "lint": "next lint"
   },
   "dependencies": {
@@ -24,7 +24,9 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "chokidar": "^4.0.3",
     "concurrently": "^9.2.0",
+    "cross-env": "^7.0.3",
     "electron": "^37.0.0",
     "eslint": "^9",
     "eslint-config-next": "15.3.4",
