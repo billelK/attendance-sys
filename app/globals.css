@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@plugin "flowbite-react/plugin/tailwindcss";
+@source "../.flowbite-react/class-list.json";
 
 :root {
   --background: #ffffff;
@@ -6,17 +8,17 @@
 }
 
 @theme inline {
-  --color-background: #0d0d0d;
-  --color-surface: #1a1a1a;
+  --color-background: #111827;
+  --color-surface: #1f2937;
   --color-accent: #38bdf8;
-  --color-elevated-surface: #2a2a2a;
-  --color-primary-text: #f6f6f1;
-  --color-secondary-text: #b0b0b0;
+  --color-elevated-surface: #374151;
+  --color-primary: #f6f6f1;
+  --color-secondary: #b0b0b0;
 }
 
 
 body {
   background: var(--color-background);
-  color: var(--color-primary-text);
+  color: var(--color-primary);
   font-family: Arial, Helvetica, sans-serif;
 }

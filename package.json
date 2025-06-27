@@ -7,16 +7,19 @@
   "scripts": {
     "dev": "next dev -p 3000",
     "build": "next build",
+    "build:app": "npm run build",
     "start": "next start",
     "electron": "electron .",
     "electron-dev": "cross-env NODE_ENV=development concurrently \"npm run dev\" \"wait-on http://localhost:3000 && electron .\"",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall": "flowbite-react patch"
   },
   "dependencies": {
-    "express": "^5.1.0",
+    "flowbite-react": "^0.11.8",
     "next": "15.3.4",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
