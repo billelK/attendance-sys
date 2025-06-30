@@ -8,7 +8,7 @@ import { students } from '@/data';
 
 const Student = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const rowPerPage = 10; 
+  const rowPerPage = 9; 
   const pages = Math.ceil(students.length / rowPerPage); 
 
   const sliceEnd = currentPage * rowPerPage;
