@@ -14,13 +14,13 @@ export default function Component() {
       </div>
       <SidebarItems >
         <SidebarItemGroup>
-          <SidebarItem href="/" icon={HiChartPie} >
+          <SidebarItem className=" text-xl" href="/" icon={HiChartPie} >
             Dashboard
           </SidebarItem>
-          <SidebarItem href="/teachers" icon={GiGraduateCap} >
+          <SidebarItem className=" text-xl" href="/teachers" icon={GiGraduateCap} >
             Teachers
           </SidebarItem>
-          <SidebarItem href="/students" icon={BsPeopleFill} >
+          <SidebarItem className=" text-xl" href="/students" icon={BsPeopleFill} >
             Students
           </SidebarItem>
         </SidebarItemGroup>

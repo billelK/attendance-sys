@@ -8,16 +8,13 @@ export function Component({onClose}) {
       <ListGroup className="w-48">
         <ListGroupItem onClick={() => {
           onClose();
-        }}>Profile</ListGroupItem>
+        }}>Edit</ListGroupItem>
         <ListGroupItem onClick={() => {
           onClose();
-        }}>Settings</ListGroupItem>
+        }}>Delete</ListGroupItem>
         <ListGroupItem onClick={() => {
           onClose();
-        }}>Messages</ListGroupItem>
-        <ListGroupItem onClick={() => {
-          onClose();
-        }} disabled>Download</ListGroupItem>
+        }}>Print</ListGroupItem>
       </ListGroup>
     </div>
   );

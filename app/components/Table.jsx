@@ -14,7 +14,7 @@ export function Component({ students }) {
   const [activeMenuId, setActiveMenuId] = useState(null);
   const menuWrapperRef = useRef(null);
 
-  // Close on outside click
+ 
   useEffect(() => {
     function handleClickOutside(event) {
       if (menuWrapperRef.current && !menuWrapperRef.current.contains(event.target)) {
@@ -54,7 +54,7 @@ export function Component({ students }) {
             >
               <TableCell>
                 <img
-                  className="h-10 w-10 rounded-full"
+                  className="h-8 w-8 rounded-full"
                   src={student.profile}
                   alt={student.id}
                 />
@@ -67,17 +67,13 @@ export function Component({ students }) {
               <TableCell>{student.phone}</TableCell>
               <TableCell>
                 <div className="relative inline-block">
-                  {/* 3 dots icon */}
                   <BsThreeDots
                     className="cursor-pointer"
                     onClick={() =>
-                      setActiveMenuId((prev) =>
-                        prev === student.id ? null : student.id
-                      )
+                      setActiveMenuId(student.id)
                     }
                   />
 
-                  {/* Conditional menu */}
                   {activeMenuId === student.id && (
                     <div ref={menuWrapperRef}>
                       <ListGroup onClose={() => setActiveMenuId(null)} />
