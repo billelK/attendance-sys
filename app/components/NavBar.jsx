@@ -9,7 +9,7 @@ import FormPopUp from '@/app/components/FormPopUp';
 export function Component() {
   return (
     <div className="flex justify-center items-center"> 
-    <Navbar  className=" w-full !bg-[#111827]" fluid rounded>
+    <Navbar  className=" w-full dark:bg-[#111827]" fluid rounded>
       <NavbarBrand as={Link} href="#">
         <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white ">All Students</span>
       </NavbarBrand>

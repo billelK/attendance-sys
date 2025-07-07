@@ -9,8 +9,8 @@ import { BsPeopleFill } from "react-icons/bs";
 export default function Component() {
   return (
     <Sidebar className="h-screen w-64" aria-label="Sidebar with logo branding example">
-      <div>
-         <img className="h-[120px] w-[180px]" src="nextjs.png" alt="next" />
+      <div className="h-[180px] w-[180px] mb-5">
+         <img  src="CGMA-logo-white.png" alt="next" />
       </div>
       <SidebarItems >
         <SidebarItemGroup>
